@@ -251,7 +251,7 @@ body {
         align-items: center;
         text-align: center;
         font-weight: 375;
-        font-size: 1.875rem;
+        font-size: 1.5rem;
     }
 
     .container__contenido__derecha {
@@ -260,7 +260,7 @@ body {
 
     .container__contenido__derecha__parrafo {
         font-weight: 375;
-        font-size: 1.375rem;
+        font-size: 1.25rem;
     }
 
     .container__contenido__limitador__parrafo {
