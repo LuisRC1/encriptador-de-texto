@@ -7,16 +7,18 @@ function asignarTextoElemento(elementoHTML, texto) {
 }
 
 function caracteresNoPermitidos(event) {
-   // Definir la expresión regular que solo permite letras minúsculas y números
+   // Expresión regular que solo permite letras minúsculas y números
     let caracterPermitido = /^[a-zñ0-9 !\t\r\n]+$/;
 
-   // Obtener el carácter presionado usando event
+   // Obtiene el carácter presionado usando event
     let caracterPresionado = String.fromCharCode(event.which || event.keyCode);
 
-   // Si el carácter ingresado no es una letra minúscula o número, evitar que se ingrese
+   // Permite ingresar una letra minúscula o número
     if (!caracterPermitido.test(caracterPresionado)) {
         event.preventDefault(); // Evita que se inserte el carácter en el campo de texto
-        //alert("No se aceptan mayúsculas, acentos o caracteres especiales.");
+        let toast = document.querySelector('.miToast');
+        toast.style.display = "block";
+        setTimeout(function(){ toast.style.display = "none"; }, 3000); // Desaparece después de 3 segundos
     }
 }
 

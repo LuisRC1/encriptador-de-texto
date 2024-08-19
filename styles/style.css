@@ -41,6 +41,12 @@ body {
     /*gap: 40px;*/
 }
 
+.mensaje__toasts {
+    gap: 1rem;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
 .container__contenido__input {
     border: none;
     font-weight: 400;
@@ -70,9 +76,8 @@ body {
     flex-direction: row;
     gap: 0.5rem;
     color: #495057;
-
     font-weight: 400;
-    font-size: 0.75rem;
+    font-size: 1rem;
 }
 
 .container__contenido__botones {
@@ -230,6 +235,15 @@ body {
 
     .container__contenido__izquierda {
         width: auto;
+    }
+
+    .mensaje__toasts {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 1rem;
+        font-weight: 400;
+        font-size: 0.75rem;
     }
 
     .container__contenido__input {

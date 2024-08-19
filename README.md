@@ -14,7 +14,7 @@ Finalizado.
 
 * Este proyecto encripta y/o desencripta texto utilizando los botones de "Encriptar" y "Desencriptar" y adicionalemente agrega un botón llamado "Copiar" que copia la salida del texto encriptado o desencriptado.
 
-* Muestra un mensaje de alerta cuando el usuario introduce un caracter no permitido (mayúsculas, acentos o caracteres especiales).
+* Muestra un mensaje (toast) cuando el usuario introduce un caracter no permitido (mayúsculas, acentos o caracteres especiales).
 
 * Es responsivo.
 
