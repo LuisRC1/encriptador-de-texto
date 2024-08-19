@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de texto</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <nav>
+            <img class="container__imagen" src="./img/Logo.png" alt="Logo de Alura">
+        </nav>
+    </header>
+    <main class="container">
+        <section class="container__contenido__izquierda">
+            <textarea class="container__contenido__input" cols="30" rows="15" placeholder="Ingrese el texto aquí"></textarea>
+            <div class="container__contenido__limitador">
+                <p class="container__contenido__limitador__parrafo"><img src="./img/Group.png"
+                        alt="Signo de admiración">Solo letras minúsculas y sin acentos</p>
+                <div class="container__contenido__botones">
+                    <button onclick="eventoClickEncriptar();" class="container__contenido__boton__uno">Encriptar</button>
+                    <button onclick="eventoClickDesencriptar();" class="container__contenido__boton__dos">Desencriptar</button>
+                </div>
+            </div>
+        </section>
+        <div class="container__contenido__derecha">
+            <br>
+            <p class="container__contenido__derecha__parrafo"></p>
+            <img class="container__contenido__derecha__imagen" src="./img/Muñeco.png" alt="Muñeco">
+            <br>
+            <div class="container__contenido__derecha__mensaje">
+                <p class="container__contenido__mensaje__alerta"></p>
+                <p class="container__contenido__mensaje__inicial"></p>
+                <br><br>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <p>Desarrollado por Luis Rivas 2024</p>
+    </footer>
+    <script src="app.js"></script>
+</body>
+
+</html>
