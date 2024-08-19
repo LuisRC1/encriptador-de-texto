@@ -6,6 +6,20 @@ function asignarTextoElemento(elementoHTML, texto) {
     return;
 }
 
+function caracteresNoPermitidos(event) {
+   // Definir la expresión regular que solo permite letras minúsculas y números
+    let caracterPermitido = /^[a-zñ0-9 !\t\r\n]+$/;
+
+   // Obtener el carácter presionado usando event
+    let caracterPresionado = String.fromCharCode(event.which || event.keyCode);
+
+   // Si el carácter ingresado no es una letra minúscula o número, evitar que se ingrese
+    if (!caracterPermitido.test(caracterPresionado)) {
+        event.preventDefault(); // Evita que se inserte el carácter en el campo de texto
+        alert("No se aceptan mayúsculas, acentos o caracteres especiales");
+    }
+}
+
 function eliminarImagen() {
     let eliminarImagen = document.querySelector('.container__contenido__derecha__imagen');
     eliminarImagen.remove();
@@ -97,5 +111,7 @@ function desencriptar(stringDesencriptar) {
 }
 
 /***********Llamar funciones y pasar argumentos***********/
+// Uso en un campo de texto
+document.querySelector('.container__contenido__input').addEventListener("keypress", caracteresNoPermitidos);
 asignarTextoElemento('.container__contenido__mensaje__alerta', 'Ningún mensaje fue encontrado');
 asignarTextoElemento('.container__contenido__mensaje__inicial', 'Ingresa el texto que desees encriptar o desencriptar.');
