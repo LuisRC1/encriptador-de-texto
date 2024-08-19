@@ -16,7 +16,7 @@ function caracteresNoPermitidos(event) {
    // Si el carácter ingresado no es una letra minúscula o número, evitar que se ingrese
     if (!caracterPermitido.test(caracterPresionado)) {
         event.preventDefault(); // Evita que se inserte el carácter en el campo de texto
-        alert("No se aceptan mayúsculas, acentos o caracteres especiales");
+        alert("No se aceptan mayúsculas, acentos o caracteres especiales.");
     }
 }
 
