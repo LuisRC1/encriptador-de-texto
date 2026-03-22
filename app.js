@@ -29,7 +29,7 @@ function eliminarImagen() {
 
 function crearBoton() {
     let newButton = document.createElement("button");
-    let textToBoton = document.createTextNode("Copiar");
+    let textToBoton = document.createTextNode("Copy");
     newButton.appendChild(textToBoton);
     let element = document.querySelector('.container__contenido__derecha__mensaje');
     element.appendChild(newButton);
@@ -115,5 +115,5 @@ function desencriptar(stringDesencriptar) {
 /***********Llamar funciones y pasar argumentos***********/
 // Uso en un campo de texto
 document.querySelector('.container__contenido__input').addEventListener("keypress", caracteresNoPermitidos);
-asignarTextoElemento('.container__contenido__mensaje__alerta', 'Ningún mensaje fue encontrado');
-asignarTextoElemento('.container__contenido__mensaje__inicial', 'Ingresa el texto que desees encriptar o desencriptar.');
+asignarTextoElemento('.container__contenido__mensaje__alerta', 'Message was not found.');
+asignarTextoElemento('.container__contenido__mensaje__inicial', 'Enter the text you want to encrypt or decrypt.');
